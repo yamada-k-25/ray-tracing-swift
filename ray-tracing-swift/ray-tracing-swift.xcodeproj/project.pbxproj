@@ -17,6 +17,9 @@
 		2DFE09F8257BA67800DB5B18 /* OutputImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFE09F7257BA67800DB5B18 /* OutputImage.swift */; };
 		2DFE0A0A257BCC0400DB5B18 /* Ray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFE0A09257BCC0400DB5B18 /* Ray.swift */; };
 		2DFE0A12257BE17E00DB5B18 /* output.ppm in Resources */ = {isa = PBXBuildFile; fileRef = 2DFE0A11257BE17E00DB5B18 /* output.ppm */; };
+		2DFE0A17257C410900DB5B18 /* SCNVector+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFE0A16257C410900DB5B18 /* SCNVector+.swift */; };
+		2DFE0A1C257C457A00DB5B18 /* HitRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFE0A1B257C457A00DB5B18 /* HitRecord.swift */; };
+		2DFE0A21257C45BB00DB5B18 /* Sphere.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFE0A20257C45BB00DB5B18 /* Sphere.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +57,9 @@
 		2DFE09F7257BA67800DB5B18 /* OutputImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputImage.swift; sourceTree = "<group>"; };
 		2DFE0A09257BCC0400DB5B18 /* Ray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ray.swift; sourceTree = "<group>"; };
 		2DFE0A11257BE17E00DB5B18 /* output.ppm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = output.ppm; sourceTree = "<group>"; };
+		2DFE0A16257C410900DB5B18 /* SCNVector+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SCNVector+.swift"; sourceTree = "<group>"; };
+		2DFE0A1B257C457A00DB5B18 /* HitRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HitRecord.swift; sourceTree = "<group>"; };
+		2DFE0A20257C45BB00DB5B18 /* Sphere.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sphere.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,7 +119,10 @@
 				2DFE09D2257BA61A00DB5B18 /* ray_tracing_swift.entitlements */,
 				2DFE09CB257BA61A00DB5B18 /* Preview Content */,
 				2DFE09F7257BA67800DB5B18 /* OutputImage.swift */,
+				2DFE0A16257C410900DB5B18 /* SCNVector+.swift */,
 				2DFE0A09257BCC0400DB5B18 /* Ray.swift */,
+				2DFE0A1B257C457A00DB5B18 /* HitRecord.swift */,
+				2DFE0A20257C45BB00DB5B18 /* Sphere.swift */,
 			);
 			path = "ray-tracing-swift";
 			sourceTree = "<group>";
@@ -275,9 +284,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DFE0A21257C45BB00DB5B18 /* Sphere.swift in Sources */,
 				2DFE0A0A257BCC0400DB5B18 /* Ray.swift in Sources */,
 				2DFE09C8257BA61700DB5B18 /* ContentView.swift in Sources */,
+				2DFE0A17257C410900DB5B18 /* SCNVector+.swift in Sources */,
 				2DFE09F8257BA67800DB5B18 /* OutputImage.swift in Sources */,
+				2DFE0A1C257C457A00DB5B18 /* HitRecord.swift in Sources */,
 				2DFE09C6257BA61700DB5B18 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -14,6 +14,7 @@ struct ContentView: View {
             .onAppear {
                 OutputImage.renderTest()
                 OutputImage.skyImage()
+                Sphere.testRender()
             }
     }
 }

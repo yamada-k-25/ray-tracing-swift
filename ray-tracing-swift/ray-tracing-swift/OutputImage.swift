@@ -9,43 +9,6 @@ import Foundation
 import SwiftUI
 import SceneKit
 
-extension SCNVector3 {
-    static func + (left: SCNVector3, right: SCNVector3) -> SCNVector3 {
-        return SCNVector3(left.x + right.x, left.y + right.y, left.z + right.z)
-    }
-    
-    static func - (left: SCNVector3, right: SCNVector3) -> SCNVector3 {
-        return SCNVector3(left.x - right.x, left.y - right.y, left.z - right.z)
-    }
-    
-    static func / (left: SCNVector3, right: Double) -> SCNVector3 {
-        return SCNVector3(Double(left.x)/right, Double(left.y)/right, Double(left.z)/right)
-    }
-    
-    static func * (left: SCNVector3, right: Double) -> SCNVector3 {
-        return SCNVector3(Double(left.x)*right, Double(left.y)*right, Double(left.z)*right)
-    }
-    
-    static func * (left: Double, right: SCNVector3) -> SCNVector3 {
-        return SCNVector3(Double(right.x)*left, Double(right.y)*left, Double(right.z)*left)
-    }
-    
-    static func dot(_ left: SCNVector3, _ right: SCNVector3) -> Double {
-        return Double(left.x * right.x + left.y * right.y + left.z * right.z)
-    }
-}
-
-class Sphere {
-    static func hitSphere(center: SCNVector3, radius: Double, ray: Ray) -> Bool {
-        let originCenter: SCNVector3 = ray.origin + center
-        let a = SCNVector3.dot(ray.direction, ray.direction)
-        let b = 2.0 * SCNVector3.dot(originCenter, ray.direction)
-        let c = SCNVector3.dot(originCenter, originCenter) - radius * radius
-        let discriminant = b*b - 4*a*c
-        return discriminant > 0
-    }
-}
-
 class OutputImage {
     static func renderTest() {
         let imageWidth: Int = 256
