@@ -14,6 +14,9 @@
 		2DFE09D0257BA61A00DB5B18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DFE09CE257BA61A00DB5B18 /* Main.storyboard */; };
 		2DFE09DC257BA61B00DB5B18 /* ray_tracing_swiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFE09DB257BA61B00DB5B18 /* ray_tracing_swiftTests.swift */; };
 		2DFE09E7257BA61B00DB5B18 /* ray_tracing_swiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFE09E6257BA61B00DB5B18 /* ray_tracing_swiftUITests.swift */; };
+		2DFE09F8257BA67800DB5B18 /* OutputImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFE09F7257BA67800DB5B18 /* OutputImage.swift */; };
+		2DFE0A0A257BCC0400DB5B18 /* Ray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DFE0A09257BCC0400DB5B18 /* Ray.swift */; };
+		2DFE0A12257BE17E00DB5B18 /* output.ppm in Resources */ = {isa = PBXBuildFile; fileRef = 2DFE0A11257BE17E00DB5B18 /* output.ppm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,9 @@
 		2DFE09E2257BA61B00DB5B18 /* ray-tracing-swiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ray-tracing-swiftUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DFE09E6257BA61B00DB5B18 /* ray_tracing_swiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ray_tracing_swiftUITests.swift; sourceTree = "<group>"; };
 		2DFE09E8257BA61B00DB5B18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2DFE09F7257BA67800DB5B18 /* OutputImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputImage.swift; sourceTree = "<group>"; };
+		2DFE0A09257BCC0400DB5B18 /* Ray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ray.swift; sourceTree = "<group>"; };
+		2DFE0A11257BE17E00DB5B18 /* output.ppm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = output.ppm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +107,13 @@
 				2DFE09C5257BA61700DB5B18 /* AppDelegate.swift */,
 				2DFE09C7257BA61700DB5B18 /* ContentView.swift */,
 				2DFE09C9257BA61A00DB5B18 /* Assets.xcassets */,
+				2DFE0A11257BE17E00DB5B18 /* output.ppm */,
 				2DFE09CE257BA61A00DB5B18 /* Main.storyboard */,
 				2DFE09D1257BA61A00DB5B18 /* Info.plist */,
 				2DFE09D2257BA61A00DB5B18 /* ray_tracing_swift.entitlements */,
 				2DFE09CB257BA61A00DB5B18 /* Preview Content */,
+				2DFE09F7257BA67800DB5B18 /* OutputImage.swift */,
+				2DFE0A09257BCC0400DB5B18 /* Ray.swift */,
 			);
 			path = "ray-tracing-swift";
 			sourceTree = "<group>";
@@ -240,6 +249,7 @@
 			files = (
 				2DFE09D0257BA61A00DB5B18 /* Main.storyboard in Resources */,
 				2DFE09CD257BA61A00DB5B18 /* Preview Assets.xcassets in Resources */,
+				2DFE0A12257BE17E00DB5B18 /* output.ppm in Resources */,
 				2DFE09CA257BA61A00DB5B18 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,7 +275,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DFE0A0A257BCC0400DB5B18 /* Ray.swift in Sources */,
 				2DFE09C8257BA61700DB5B18 /* ContentView.swift in Sources */,
+				2DFE09F8257BA67800DB5B18 /* OutputImage.swift in Sources */,
 				2DFE09C6257BA61700DB5B18 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
